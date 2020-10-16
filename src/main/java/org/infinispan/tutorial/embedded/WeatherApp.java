@@ -36,7 +36,7 @@ public class WeatherApp {
    }
 
    private WeatherService initWeatherService(Cache<String,LocationWeather> cache) {
-      String apiKey = System.getenv("OWMAPIKEY");
+      String apiKey = "111111";//System.getenv("OWMAPIKEY");
       if (apiKey == null) {
          System.out.println("WARNING: OWMAPIKEY environment variable not set, using the RandomWeatherService.");
          return new RandomWeatherService(cache);

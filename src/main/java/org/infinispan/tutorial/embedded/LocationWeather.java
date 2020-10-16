@@ -24,7 +24,7 @@ public class LocationWeather {
 
    @Override
    public String toString() {
-      return String.format("Temperature: %.1f° C, Conditions: %s", temperature, conditions);
+      return String.format("Country: %s,Temperature: %.1f° C, Conditions: %s", country,temperature, conditions);
    }
 
    public static class LocationGrouper implements Grouper<String> {

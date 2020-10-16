@@ -11,6 +11,7 @@ public class CacheListener {
    public void entryCreated(CacheEntryCreatedEvent<String, LocationWeather> event) {
       if (!event.isOriginLocal()) {
          System.out.printf("-- Entry for %s modified by another node in the cluster\n", event.getKey());
+         System.out.printf("LocationWeather: %s in the cluster\n", event.getValue());
       }
    }
 }
